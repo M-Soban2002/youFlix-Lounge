@@ -1,0 +1,35 @@
+{
+  "name": "youflix",
+  "version": "1.0.0",
+  "description": "a youtube like social media app backend",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon src/index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/M-Soban2002/youFlix-Lounge.git"
+  },
+  "author": "soban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Soban2002/youFlix-Lounge/issues"
+  },
+  "homepage": "https://github.com/M-Soban2002/youFlix-Lounge#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.2.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "mongoose-aggregate-paginate-v2": "^1.0.7",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.1"
+  }
+}
