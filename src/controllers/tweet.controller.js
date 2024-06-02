@@ -6,7 +6,7 @@ import {ApiResponse} from "../utils/ApiResponse.js"
 import {asyncHandler} from "../utils/asyncHandler.js"
 
 const createTweet = asyncHandler(async (req, res) => {
-    //TODO: create tweet
+    
     try {
         const { content } = req.body
         const { owner } = req.user._id
@@ -28,7 +28,7 @@ const createTweet = asyncHandler(async (req, res) => {
 })
 
 const getUserTweets = asyncHandler(async (req, res) => {
-    // TODO: get user tweets
+   
     const userTweets = await Tweet.findById(req.user._id)
 
     if(!userTweets){
@@ -47,7 +47,7 @@ const getUserTweets = asyncHandler(async (req, res) => {
 })
 
 const updateTweet = asyncHandler(async (req, res) => {
-    //TODO: update tweet
+   
     const tweet = await Tweet.findByIdAndUpdate(req.params.id //" req.user._id " can be used as well
         , {
         $set: {
@@ -71,7 +71,7 @@ const updateTweet = asyncHandler(async (req, res) => {
 })
 
 const deleteTweet = asyncHandler(async (req, res) => {
-    //TODO: delete tweet
+    
 
    const deletedTweet = await Tweet.findByIdAndDelete(req.params.id)
 
